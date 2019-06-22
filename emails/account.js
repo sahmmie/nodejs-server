@@ -8,6 +8,8 @@ const sendWelcomeEmail = (email, name) => {
         from: 'konnect@gmail.com',
         subject: 'Thanks for signing up',
         text: `Welcome to Gbagbos,${name}. Enjoy your time`
+    }).catch((err) => {
+        console.log(err)
     })
 }
 

@@ -98,7 +98,7 @@ router.delete('/task/:id', auth, async (req, res) => {
 })
 
 const fileUpload = multer({
-    dest: 'images',
+    dest: 'files',
     limits: {
         fileSize: 1000000
     },

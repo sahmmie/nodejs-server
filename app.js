@@ -32,6 +32,7 @@ mongoose.connection.on('error', (err) => {
 
 const users = require('./routes/users')
 const tasks = require('./routes/tasks')
+const admin_users = require('./routes/admin_users')
 
 const port = process.env.PORT
 
@@ -46,6 +47,7 @@ app.use(express.json())
 
 app.use('/users', users);
 app.use('/tasks', tasks);
+app.use('/admin_users', admin_users);
 
 app.get('/', (req, res) => {
     res.status(202).send('I work');
@@ -68,11 +70,3 @@ app.listen(port, () => {
 // }
 
 // main()
-
-// const multer = require('multer')
-// const upload = multer({
-//     dest: 'images'
-// })
-// app.post('/upload', upload.single('upload'), (req, res) => {
-//     res.status(200).send()
-// })
