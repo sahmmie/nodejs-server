@@ -20,7 +20,7 @@
     "passport": "*",
     "passport-jwt": "*",
     "sharp": "^0.22.1",
-    "validator": "^11.0.0"
+    "validator": "^13.7.0"
   },
   "author": "Fainy",
   "license": "MIT",
